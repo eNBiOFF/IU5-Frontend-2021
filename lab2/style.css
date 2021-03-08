@@ -424,6 +424,71 @@ body {
     max-width: 100%;
 }
 
+.real-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.conctacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 514px;
+    height: 214px;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label {
+    color: white;
+    font-family: 'Graphik LCG';
+    font-size: 16px;
+}
+
+.fingertype {
+    color: white;
+    font-family: 'Graphik LCG';
+    font-size: 20px;
+}
+
+.addres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 200px;
+}
+
+.addres1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.addres2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 176px;
+}
+
+.icns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 170px;
+}
+
 @media screen and (max-width: 550px) {
     html body {
         max-width: 100%;
@@ -572,6 +637,7 @@ body {
         max-width: 100%;
     }
     .div1 {
+        background-color: #1e1e1e;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -579,13 +645,14 @@ body {
         width: 549px !important;
         margin-left: 0 !important;
         max-width: 100%;
+        padding-bottom: 162px !important;
     }
     .footer {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         width: 549px;
-        background-color: #181818;
+        background-color: #1e1e1e;
         max-width: 100%;
         margin-left: 0 !important;
     }
@@ -612,5 +679,20 @@ body {
     }
     #tot_samiy {
         width: 549px !important;
+    }
+    .real-footer {
+        flex-direction: column;
+        height: 1086px;
+        margin-bottom: 0px;
+        background-color: #1e1e1e;
+    }
+    .conctacts {
+        flex-direction: column;
+        width: 320px;
+        height: 720px;
+    }
+    .contact1 {
+        height: 224px !important;
+        width: 122px;
     }
 }
