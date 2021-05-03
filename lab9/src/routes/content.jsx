@@ -7,7 +7,6 @@ import '../components/JS/workflow';
 import './content.css'
 import crown from '../components/crown.png'
 import { useHistory } from 'react-router';
-import '../key.env'
 
 let key = process.env.REACT_APP_API_KEY;
 function Content({err}) {
@@ -19,7 +18,10 @@ function Content({err}) {
     useEffect(()=>{
     if(localStorage.getItem('input')) {
     let data_name = localStorage.getItem('input');
-    fetch('https://api.github.com/users/'+ data_name).then(data=>data.json().then(data=>{
+    fetch('https://api.github.com/users/'+ data_name
+    ,{
+      Authorization: 'Token ' +key
+    }).then(data=>data.json().then(data=>{
         setObj(data);
         if (data.message !== "Not Found"){
         console.log('z tut');
